@@ -13,9 +13,9 @@
 lockclean
 	; Utility program to clean abandoned locks. those which LKE
 	; reports as: PID= <pid> which is a nonexistent process.
-	; $text(+0) tries a zero timeout lock acquisition which
+	; lockclean tries a zero timeout lock acquisition which
 	; cleans the abandoned lock slot.
-	; Usage: mumps -run $text(+0) or do ^$text(+0)
+	; Usage: mumps -run lockclean or do ^lockclean
 	; There are no options or parameters.
 
 	new i,j,io,line,lkeout
